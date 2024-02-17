@@ -1,11 +1,11 @@
-class BarBaz extends HTMLElement {
+class ImportRegistration extends HTMLElement {
     constructor() {
         super();
         this._shadowRoot = this.attachShadow({ mode: 'closed' });
         const p = document.createElement('p');
-        p.textContent = 'BAR BAZ!';
+        p.textContent = 'Import registration upgraded successfully!';
         this._shadowRoot.appendChild(p);
     }
 }
 
-export { BarBaz };
+export { ImportRegistration };

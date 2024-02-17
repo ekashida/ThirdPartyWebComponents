@@ -1,10 +1,6 @@
 import { LightningElement } from 'lwc';
-import { BarBaz } from './barBaz';
+import { ImportRegistration } from './importRegistration';
 
-export default class InlineNativeWebComponent extends LightningElement {
-    handleClick() {
-        if (!customElements.get('bar-baz')) {
-            customElements.define('bar-baz', BarBaz);
-        }
-    }
-}
+customElements.define('import-registration', ImportRegistration);
+
+export default class InlineNativeWebComponent extends LightningElement {}
